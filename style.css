@@ -483,3 +483,35 @@
     width: 100%;
   }
 }
+
+.transition-div {
+  width: 70%;
+  background-color: #fff;
+  padding: 75px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -75px;
+  margin-bottom: -150px;
+  box-shadow: 0px 73px 76px #44549538;
+
+  & h1 {
+    font-family: 'Zoho_Puvi_Medium';
+    color: #000;
+    font-size: 1.875rem;
+    margin: 0;
+  }
+  & #leo {
+    font-family: 'Zoho_Puvi_Bold';
+    color: #000;
+  }
+}
+
+.brandings {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
