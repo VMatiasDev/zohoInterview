@@ -331,12 +331,14 @@
       transition: 0.5s;
     }
   }
-
-  .meeting {
-    margin-top: 103px;
-    @media (max-width: 768px) {
-      width: 90%;
-    }
+}
+.image {
+  margin-top: 103px;
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+  @media (max-width: 550px) {
+    width: 50%;
   }
 }
 
@@ -346,4 +348,82 @@
   align-items: center;
   width: 70%;
   margin: 0 auto;
+}
+
+.description {
+  background-color: #e4e9f4;
+  padding-top: 300px;
+  padding-bottom: 470px;
+
+  & h1 {
+    font-family: 'Zoho_Puvi_Bold';
+    color: #000;
+    font-size: 2.25rem;
+    text-align: center;
+    width: 40%;
+  }
+}
+
+.text-and-image {
+  display: flex;
+  align-items: center;
+  margin-top: 82px;
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+
+    & h1 {
+      font-family: 'Zoho_Puvi_Bold';
+      font-size: 1.625rem;
+      width: 100%;
+      text-align: left;
+    }
+
+    & p {
+      font-size: 1.0625rem;
+      max-width: 70%;
+    }
+
+    & button {
+      background-color: #2539ab;
+      padding: 16px 20px;
+      border: none;
+      border-radius: 7px;
+      color: #fff;
+      font-family: 'Zoho_Puvi_Bold';
+      font-size: 1.0625rem;
+      max-width: 50%;
+    }
+
+    & h3 {
+      font-family: 'Zoho_Puvi_Bold';
+      font-size: 1.0625rem;
+    }
+  }
+  & a {
+    text-decoration: none;
+    color: #3c61be;
+    font-family: 'Zoho_Puvi_SemiBold';
+  }
+}
+
+.programs {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  @media (max-width: 768px) {
+    scale: 0.5;
+  }
+}
+
+.program-image {
+  border-radius: 7px;
+  margin-top: 32px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 }
