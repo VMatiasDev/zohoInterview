@@ -288,6 +288,14 @@
     font-family: 'Zoho_Puvi_Medium';
     font-size: 1rem;
     gap: 68px;
+
+    @media (max-width: 1000px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    flex-wrap: wrap;
   }
 }
 
@@ -353,7 +361,7 @@
 .description {
   background-color: #e4e9f4;
   padding-top: 300px;
-  padding-bottom: 470px;
+  padding-bottom: 350px;
 
   & h1 {
     font-family: 'Zoho_Puvi_Bold';
@@ -368,6 +376,10 @@
   display: flex;
   align-items: center;
   margin-top: 82px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
   .text {
     display: flex;
     flex-direction: column;
@@ -416,6 +428,10 @@
   @media (max-width: 768px) {
     scale: 0.5;
   }
+
+  @media (max-width: 420px) {
+    flex-direction: column;
+  }
 }
 
 .program-image {
@@ -429,7 +445,6 @@
 }
 
 .additional {
-  padding-top: 440px;
   padding-bottom: 236px;
 
   & h1 {
@@ -482,6 +497,10 @@
     text-align: center;
     width: 100%;
   }
+
+  @media (max-width: 480px) {
+    padding: 48px;
+  }
 }
 
 .transition-div {
@@ -513,5 +532,65 @@
 .brandings {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 50px;
+}
+
+.second-transition-div {
+  width: 70%;
+  background-color: #fff8ea;
+  padding: 50px;
+  border-radius: 20px;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -275px;
+  margin-bottom: 120px;
+  box-shadow: 0px 43px 96px #00000029;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.quote-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & img {
+    width: 90px;
+  }
+
+  & h1 {
+    text-align: left;
+    font-family: 'Zoho_Puvi_Light';
+    font-size: 2rem;
+    width: 100%;
+    margin-top: 26px;
+    margin-bottom: 32px;
+  }
+
+  & p {
+    font-family: 'Zoho_Puvi_SemiBold';
+    font-size: 1.125rem;
+  }
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+
+  & button {
+    background-color: #000;
+    color: #fff;
+    padding: 16px 32px;
+    align-self: center;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      background-color: #202020;
+      transition: 0.5s;
+    }
+  }
 }
